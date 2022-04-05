@@ -27,3 +27,26 @@ var questions = [
   
 
 startButton.addEventListener("click", startQuiz)
+
+var timer = 60
+var option1 = document.querySelector("#Answer A");
+var option2 = document.querySelector("#Answer B");
+var option3 = document.querySelector("#Answer C");
+var option4 = document.querySelector("#Answer D");
+var qindex = 0
+var points = 0
+
+
+function startQuiz() {
+  nextQuestion()
+  startCounter(60);
+}
+
+function nextQuestion() {
+  question.textContent = questions[qindex].title
+  AnswerA.textContent = questions[qindex].choiceA[1]
+  AnswerB.textContent = questions[qindex].choiceA[2]
+  AnswerC.textContent = questions[qindex].choiceA[3]
+  AnswerD.textContent = questions[qindex].choiceA[4]
+
+}
