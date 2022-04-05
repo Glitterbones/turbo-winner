@@ -1,24 +1,29 @@
 var questions = [
-    {
-      id: 1,
-      question: "Where was Buddha born?",
-      answers: [
-        { text: "A: Japan", correct: false },
-        { text: "B: Napal", correct: true },
-        { text: "C: Thailand", correct: false },
-        { text: "D: India", correct: false },
-      ],
+{
+        title: "Where was Buddah born?",
+        choiceA: ["Japan", "Nepal", "Thailand ", "india"],
+        answer: "Nepal"
     },
-  
-    {
-        id: 2,
-        question: "What was Buddha orinally born?",
-        answers: [
-          { text: "A: An Orphan", correct: false },
-          { text: "B: A monk", correct: false },
-          { text: "C: Into a working class family ", correct: false },
-          { text: "D: a Wealthy prince", correct: true },
-        ],
-      },
 
-  ];
+    {
+      title: "What was Buddah Born as?",
+      choiceA: ["An Orphan", "A Monk", "Priest", "Prince"],
+      answer: "Prince"
+  },
+{
+  title: "What is the holy book of buddah?",
+  choiceA: ["His Diary", "50 shades of grey", "The Quran", "There is not one"],
+  answer: "There is not one"
+
+},
+      
+{
+  title: "What was the name of Buddahs child?",
+  choiceA: ["He did not have any", "Maya", "Rahula", "Nanda"],
+  answer: "Rahula"
+
+},
+]
+  
+
+startButton.addEventListener("click", startQuiz)
