@@ -28,13 +28,16 @@ var questions = [
 
 startButton.addEventListener("click", startQuiz)
 
-var timer = 60
+var optButton = document.querySelectorAll(".btn")
+var question = document.querySelector("#question")
+var choices = document.querySelector("#choices");
 var option1 = document.querySelector("#Answer A");
 var option2 = document.querySelector("#Answer B");
 var option3 = document.querySelector("#Answer C");
 var option4 = document.querySelector("#Answer D");
 var qindex = 0
 var points = 0
+var timer = 60
 
 
 function startQuiz() {
@@ -50,3 +53,18 @@ function nextQuestion() {
   AnswerD.textContent = questions[qindex].choiceA[4]
 
 }
+
+console.log(optButton)
+optButton.forEach(button => {
+    button.addEventListener("click", function (event) {
+        console.log(this.textContent)
+        if (this.textContent === questions[qindex].answer) {
+            console.log(true)
+            points++
+            console.log(points)
+            qindex++
+        }
+
+        nextQuestion()
+    })
+})
