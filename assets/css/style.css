@@ -26,3 +26,42 @@
 }
 
 
+.start-btn {
+    padding: 10px 28px;
+    text-decoration: none;
+    background: whitesmoke; 
+    font-size: 24px; 
+    color: purple; 
+    border-radius: 15px;
+    margin-top: 25px;
+}
+
+.score-btn{
+    padding: 10px 30px;
+    background: whitesmoke; 
+    font-size: 1.3rem;
+    color: purple; 
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+    padding: 10px 28px;
+    background: whitesmoke; 
+    font-size: 24px;
+    color: purple; 
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 40rem;
+    justify-content: center;
+}
+
+
+
+
+.option-text {
+    color: purple;
+    padding: 5px 0px; 
+}
+
