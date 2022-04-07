@@ -1,51 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">  
-    <script src="assets\js.js"></script>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> My Quiz</title>
-        <link rel="stylesheet" href=.\assets\css.css>
-    </head>
+<html lang="en">
 
-    <body> 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
 
-      
+<body>
+    <div class="container" id="start-card">
+        <h1>Buddha Quiz </h1>
+    
+        <div>
+            <button class="start-btn" id="start">Start Quiz</button>
+        </div>
+    </div>
+    <section>
+       
 
-</div>
-        <div class="container">
-            <div id="questions">
-                <div id="buttons" class="choices">
-                    <button class="btn" onclick="here('Answer A')">Answer A</button>
-                    <button class="btn" onclick="here('Answer B')">Answer B</button>
-                    <button class="btn" onclick="here('Answer C')">Answer C</button>
-                    <button class="btn" onclick="here('Answer D')">Answer D</button>
-                </div>
-            </div>
-
-
-
-            <div>
-                <button class="start-btn" id="start">Start Quiz</button>
-            </div>
-
-
-             <div class="time-info" id="current-time">
-                    Time
-                    <span class="timer">:00</span>
-             </div>
-
-             <div class="container">
+        <div id="question-card">
+            <div class="container">
                 <h1 class="" id="question"></h1>
             </div>
 
- 
- <div id="highscore"> <a href="./highscore.html">High Score</a></div>
- <div id="results-card" class="results">
-     <span id="final-Score"></span>
+            <div class="option-container">
+                <div class="option-button" id="choices">
+                    <button class="btn" id="AnswerA">Answer 1</button>
+                    <button class="btn" id="AnswerB">Answer 2</button>
+                    <button class="btn" id="AnswerC">Answer 3</button>
+                    <button class="btn" id="AnswerD">Answer 4</button>
+                </div>
+            
+                <div class="time-info" id="current-time">
+                    Time
+                    <span class="timer">:00</span>
+                </div>
+             
+                <div id="highscore"> <a href="./highscore.html">High Score</a></div>
+                <div id="results-card" class="results">
+                    <span id="final-Score"></span>
+        
+                </div>
+            </div>
+        </div>
+    </section>
 
-     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
 
- </body>
 </html>
